@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Service</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: url(https://i.pinimg.com/736x/0f/22/59/0f2259f055a0d6d0a1b75142abbb054e.jpg)
+                        no-repeat center/cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 40px;
+            border-radius: 25px;
+            max-width: 650px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+            animation: fadeUp 1s ease forwards;
+        }
+
+     
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 35px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            line-height: 1.7;
+        }
+
+        .image-square {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .image-square img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .button-container {
+        display: flex;
+         gap: 30px;
+         margin-left: 240px;
+        }
+
+        .neon-button {
+         padding: 5px 15px;
+         font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 2px solid;
+        border-radius: 1px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s;
+        }
+
+        .neon-exit {
+         color: #ff073a;
+        border-color: #ff073a;
+        }
+
+        .neon-next {
+         color: #ffe400;
+        border-color: #ffe400;
+        }
+
+        .neon-exit:hover {
+        background: #ff073a;
+        color: #1a1a2e;
+        box-shadow: 0 0 20px #ff0044;
+        }
+
+        .neon-next:hover {
+         background: #ffe400;
+          color: #1a1a2e;
+        box-shadow: 0 0 20px #ffe400;
+        }
+
+        .neon-button:active {
+        transform: scale(0.98);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Community Service & Advocacy</h1>
+        <div class="image-square">
+            <img src="https://msumaguindanao.edu.ph/wp-content/uploads/2024/03/425805967_365499496238561_9069374489417020066_n.jpg" alt="Community Service Image">
+        </div>
+        <p>          Our mission is to promote meaningful service through school, church,
+            and community-based initiatives. Whether through charity drives,
+            environmental cleanups, youth outreach programs, or feeding missions,
+            we believe that every act of kindness creates a lasting impact.
+            Together, we can inspire change and build a compassionate community.</p>
+        <div class="button-container">
+            <a href="faith values.html" target="_blank" class="neon-button neon-exit">BACK</a>
+            <a href="reflection.html" target="_blank" class="neon-button neon-next">NEXT</a>
+    </div>
+
+</body>
+</html>

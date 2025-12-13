@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspirational Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: url('https://i.pinimg.com/736x/0f/22/59/0f2259f055a0d6d0a1b75142abbb054e.jpg')
+                        no-repeat center/cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 40px;
+            border-radius: 25px;
+            max-width: 650px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+            animation: fadeUp 1s ease forwards;
+        }
+
+     
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            font-size: 30px;
+            color: #ffffff;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        p {
+            font-size: 25px;
+            color: rgb(255, 254, 254);
+            line-height: 1.7;
+        }
+
+        .image-square {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .image-square img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }   
+
+        .portfolio-box {
+            margin-top: 20px;
+            background: #ffffff;
+            padding: 20px;
+            border-left: 5px solid #ffd34d;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+
+        .button-container {
+        display: flex;
+         gap: 30px;
+         margin-left: 240px;
+        }
+
+        .neon-button {
+         padding: 5px 15px;
+         font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 2px solid;
+        border-radius: 1px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s;
+        }
+
+        .neon-exit {
+         color: #ff073a;
+        border-color: #ff073a;
+        }
+
+        .neon-next {
+         color: #ffe400;
+        border-color: #ffe400;
+        }
+
+        .neon-exit:hover {
+        background: #ff073a;
+        color: #1a1a2e;
+        box-shadow: 0 0 20px #ff0044;
+        }
+
+        .neon-next:hover {
+         background: #ffe400;
+          color: #1a1a2e;
+        box-shadow: 0 0 20px #ffe400;
+        }
+
+        .neon-button:active {
+        transform: scale(0.98);
+        }
+    
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>INSPIRATIONAL PORTFOLIO </h1>
+        <div class="image-square">
+        <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t39.30808-6/490995586_678297124606590_5608260113197799478_n.jpg?stp=cp6_dst-jpg_tt6&_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeERlrsDdeLc2DWtuxWIlJSuXbZbWTl0IYxdtltZOXQhjP2Y6tHDuGCwXRHTs9RhItMQoDeRbKOaHVQ6Bo67D477&_nc_ohc=k6Eei_FSVqcQ7kNvwFvb6dG&_nc_oc=AdmojGEZ_t1cicFR4U4ypoV3LKCR8rCmWADGMkeBHALjwhbQcDx59WgQLi5ZfwqfdNg&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&_nc_gid=D2UfBe7afnpCOGVg0XSgSw&oh=00_AfkT-rL5ODhelXQ1iVg4r2GbGl-y-Zx1tqHChnHN0J8z9g&oe=6941940D" alt="Portfolio Image">
+        </div>
+            <p>
+                This portfolio highlights my achivement, goals, and guiding values inspired by
+                the theme “Light of the World.” I strive to use my skills and talents
+                to make a positive impact, inspire others, and live with purpose.
+                Each project and achievement reflects my commitment to growth,
+                creativity, and making a meaningful difference.
+            </p>
+            <div class="button-container">
+                <a href="Website.html" target="_blank" class="neon-button neon-exit">BACK</a>
+                <a href="faith values.html" target="_blank" class="neon-button neon-next">NEXT</a>
+    </div>
+</body>
+</html>

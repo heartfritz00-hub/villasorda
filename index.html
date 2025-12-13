@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOGIN FORM</title>
+
+<style>
+:root{
+    --primary:#ff9f1c;
+    --dark:#0f2027;
+    --glass:rgba(255,255,255,0.15);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    background:
+        linear-gradient(to right, rgba(0,0,0,.6), rgba(0,0,0,.3)),
+        url(https://i.pinimg.com/1200x/7d/15/6b/7d156b110b7346c601fbe022a4b72749.jpg) 
+        center/cover no-repeat;
+    color:white;
+}
+
+
+nav{
+    padding:20px 60px;
+    backdrop-filter: blur(10px);
+    background: rgba(0,0,0,0.4);
+}
+
+.logo{
+    font-size:28px;
+    letter-spacing:2px;
+    font-weight:700;
+}
+
+
+.container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:calc(100vh - 80px);
+    padding:0 80px;
+}
+
+
+.left{
+    max-width:600px;
+    animation: slideLeft 1.2s ease forwards;
+}
+
+.left h1{
+    font-size:64px;
+    line-height:1.1;
+}
+
+.left h1 span{
+    color:var(--primary);
+}
+
+.left h1:hover span{
+    color:white;
+    transition:.4s;
+}
+
+
+.login-box{
+    width:340px;
+    padding:35px;
+    background:var(--glass);
+    border-radius:15px;
+    backdrop-filter: blur(15px);
+    box-shadow:0 15px 40px rgba(0,0,0,.4);
+    animation: fadeUp 1.2s ease forwards;
+}
+
+.login-box h3{
+    text-align:center;
+    margin-bottom:25px;
+    letter-spacing:1px;
+}
+
+.login-box input{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    background:rgba(255,255,255,0.9);
+}
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    background:linear-gradient(45deg, var(--primary), #ffbf69);
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.4s;
+}
+
+.login-btn:hover{
+    transform: translateY(-2px);
+    box-shadow:0 10px 20px rgba(0,0,0,.4);
+}
+
+.login-box p{
+    text-align:center;
+    margin-top:15px;
+    font-size:14px;
+}
+
+.login-box a{
+    color:var(--primary);
+    text-decoration:none;
+}
+
+
+@keyframes fadeUp{
+    from{opacity:0; transform:translateY(40px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes slideLeft{
+    from{opacity:0; transform:translateX(-60px);}
+    to{opacity:1; transform:translateX(0);}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">UNA ANG GINOO</div>
+</nav>
+
+<div class="container">
+
+    <div class="left">
+        <h1>
+            LUX MUNDI<br>
+            <span>LIGHT OF THE</span><br>
+            WORLD
+        </h1>
+    </div>
+
+    <div class="login-box">
+        <h3>LOGIN</h3>
+        <input id="username" type="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Password">
+        <button class="login-btn" onclick="login()">Sign In</button>
+        <p>Don’t have an account? <a href="">Sign up</a></p>
+    </div>
+
+</div>
+
+<script>
+function login(){
+    const user=document.getElementById('username').value;
+    const pass=document.getElementById('password').value;
+
+    if(user==="admin" && pass==="admin123"){
+        window.location.href="Website.html";
+    }else{
+        alert("Incorrect username or password!");
+    }
+}
+</script>
+
+</body>
+</html>

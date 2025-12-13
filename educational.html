@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: url('https://i.pinimg.com/736x/0f/22/59/0f2259f055a0d6d0a1b75142abbb054e.jpg')
+                        no-repeat center/cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+ 
+        .container {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 40px;
+            border-radius: 25px;
+            max-width: 650px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+            animation: fadeUp 1s ease forwards;
+        }
+
+     
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+      
+        h1 {
+            font-size: 45px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #ffffff;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        a{
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .neon-button {
+            padding: 10px 22px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: 2px solid;
+            cursor: pointer;
+            text-decoration: none;
+            background: transparent;
+            transition: all 0.35s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .neon-exit {
+            color: #ff073a;
+            border-color: #ff073a;
+        }
+
+        .neon-exit:hover {
+            background: #ff073a;
+            color: #1a1a2e;
+            box-shadow: 0 0 25px #ff0044;
+            transform: scale(1.05);
+        }
+
+     
+        .neon-next {
+            color: #ffe400;
+            border-color: #ffe400;
+        }
+
+        .neon-next:hover {
+            background: #ffe400;
+            color: #1a1a2e;
+            box-shadow: 0 0 25px #ffe400;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Educational & Inspirational Page</h1>
+
+        <a>
+             Education is the spark that turns potential into progress.
+            Every lesson learned builds confidence, every mistake teaches growth.
+            Stay curious, keep learning, and believe in your ability to become better than you were yesterday
+        </a>
+        <br>
+        <br>
+        <br>
+     <div class="button-container">
+            <a href="reflection.html" class="neon-button neon-exit">BACK</a>
+            <a href="index.html" class="neon-button neon-next">LOG OUT</a>
+        </div>
+    </div>
+
+</body>
+</html>

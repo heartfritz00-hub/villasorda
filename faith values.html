@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faith</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", sans-serif;
+            background: url(https://i.pinimg.com/1200x/e4/fa/4c/e4fa4cf0ef3ab1b4c5e96bf7c5486afc.jpg)
+                        no-repeat center/cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 40px;
+            border-radius: 25px;
+            max-width: 650px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+            animation: fadeUp 1s ease forwards;
+        }
+
+     
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 25px;
+            color: rgb(255, 255, 255);
+            line-height: 1.7;
+        }
+
+        .button-container {
+        display: flex;
+         gap: 30px;
+         margin-left: 240px;
+        }
+
+        .neon-button {
+         padding: 5px 15px;
+         font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: 2px solid;
+        border-radius: 1px;
+        cursor: pointer;
+        text-decoration: none;
+        transition: 0.3s;
+        }
+
+        .neon-exit {
+         color: #ff073a;
+        border-color: #ff073a;
+        }
+
+        .neon-next {
+         color: #ffe400;
+        border-color: #ffe400;
+        }
+
+        .neon-exit:hover {
+        background: #ff073a;
+        color: #1a1a2e;
+        box-shadow: 0 0 20px #ff0044;
+        }
+
+        .neon-next:hover {
+         background: #ffe400;
+          color: #1a1a2e;
+        box-shadow: 0 0 20px #ffe400;
+        }
+
+        .neon-button:active {
+        transform: scale(0.98);
+        }
+        .image-square {
+            width: 150px;
+            height: 150px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 15px;
+            box-shadow: goldenrod;
+        }
+
+        .image-square img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Faith & Technology Integration</h1>
+        <div class="image-square">
+            <img src="https://i.pinimg.com/736x/ca/11/18/ca111892a8a9c27424668be4f1e13f26.jpg" alt="Portfolio Image">
+        </div>
+        <p>
+            Technology offers a meaningful way to share faith and positivity with others. When used with purpose,
+             digital platforms can carry messages of hope, kindness, and inspiration beyond borders.
+            By creating and sharing uplifting content online, we can reflect strong values,
+             encourage compassion, and remind others to place God at the center of life.
+              Even simple posts can make a difference and spread light in the digital space.
+        </p>
+        <div class="button-container">
+            <a href="inspirational portfolio.html" target="_blank" class="neon-button neon-exit">BACK</a>
+            <a href="community.html" target="_blank" class="neon-button neon-next">NEXT</a>
+    </div>
+</body>
+</html>
